@@ -18,8 +18,10 @@ const [loadMoreNews, setLoadMoreNews] = useState(20);
 
 useEffect(() => {
   const newsApi=async()=>{
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+
     try {
-     const news=await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}&category=${category}&pageSize=${loadMoreNews}`);
+     const news=await axios.get(`${proxyUrl}https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}&category=${category}&pageSize=${loadMoreNews}`);
     //  console.log(news.data.articles);
     //  console.log(news.data.totalResults);
      setNewsArray(news.data.articles);
