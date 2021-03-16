@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    background-color: #222;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createdBy{
+    color: white;
+    padding: 20px 30px 15px;
+    font-size: 20px;
+}
+
+.icons{
+    width: 25%;
+    display: flex;
+    height: 50px;
+    padding:20px 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    color: white;  
+}
