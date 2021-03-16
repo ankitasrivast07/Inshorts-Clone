@@ -14,6 +14,9 @@ const [loadMoreNews, setLoadMoreNews] = useState(20);
 
 
 
+  
+
+useEffect(() => {
   const newsApi=async()=>{
     try {
      const news=await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}&category=${category}&pageSize=${loadMoreNews}`);
@@ -27,9 +30,8 @@ const [loadMoreNews, setLoadMoreNews] = useState(20);
       
     }
   }
-useEffect(() => {
- newsApi();
-}, [category, loadMoreNews])
+  newsApi();
+}, [newsResults, category, loadMoreNews])
   return (
     <div className="App">
       <Menubar setCategory={setCategory} />

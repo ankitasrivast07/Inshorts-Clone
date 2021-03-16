@@ -8,7 +8,7 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
-import { useMediaQuery, createMuiTheme, capitalize } from "@material-ui/core";
+import {  createMuiTheme, capitalize } from "@material-ui/core";
 import categories from "../Content/category";
 // import ButtonGroup from '@material-ui/core/ButtonGroup';
 // import Button from '@material-ui/core/Button';
