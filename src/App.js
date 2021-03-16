@@ -29,7 +29,7 @@ const [loadMoreNews, setLoadMoreNews] = useState(20);
   }
 useEffect(() => {
  newsApi();
-}, [newsResults, category, loadMoreNews])
+}, [category, loadMoreNews])
   return (
     <div className="App">
       <Menubar setCategory={setCategory} />
